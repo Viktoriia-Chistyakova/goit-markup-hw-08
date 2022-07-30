@@ -1,0 +1,21 @@
+body {
+    font-family: "Roboto", "Sans";
+    font-size: 14px;
+    line-height: 1.7;
+    text-decoration: none;
+    color: var(--dark-txt-cl);
+
+    &.no-scroll {
+            overflow: hidden;
+        }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+// * {
+//     outline: 1px solid palevioletred;
+// }

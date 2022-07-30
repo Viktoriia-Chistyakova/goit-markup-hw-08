@@ -1,0 +1,38 @@
+.logo {
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    color: var(--accent-txt-color);
+
+    @media screen and (min-width: 480px) {
+        font-size: 24px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 145px;
+        height: 31px;
+    }
+
+
+}
+
+.logo--dark {
+    color: var(--title-txt-cl);
+}
+
+.logo--light {
+    color: var(--light-txt-cl);
+}
+.nav__logo {
+    display: block;
+    
+    @media screen and (min-width: 1200px) {
+        margin-left: 200px;
+    }
+}
