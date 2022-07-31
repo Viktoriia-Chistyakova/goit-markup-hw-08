@@ -5,18 +5,12 @@
     line-height: 1.1;
     letter-spacing: 0.03em;
     color: var(--accent-txt-color);
-
-    @media screen and (min-width: 480px) {
-        font-size: 24px;
-    }
-
-    @media screen and (min-width: 768px) {
-        font-size: 26px;
-    }
+    font-size: 24px;
 
     @media screen and (min-width: 1200px) {
         width: 145px;
         height: 31px;
+        font-size: 26px;
     }
 
 
@@ -31,8 +25,17 @@
 }
 .nav__logo {
     display: block;
+
     
     @media screen and (min-width: 1200px) {
-        margin-left: 200px;
+        margin-right: 93px;
     }
+}
+
+.footer__logo {
+
+    @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+}
 }

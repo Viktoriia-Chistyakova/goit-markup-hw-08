@@ -1,49 +1,50 @@
-// .team__socials-list {
-//     display: flex;
-//     justify-content: center;
+.team__socials-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 
-// }
+}
 
-// .team__socials-link {
-//     align-items: center;
-//     justify-content: center;
+.team__socials-link {
+    align-items: center;
+    justify-content: center;
 
-//     width: 44px;
-//     height: 44px;
-//     border-radius: 50%;
-//     display: flex;
-//     fill: var(--icon-cl);
-//     cursor: pointer;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    fill: var(--icon-cl);
+    cursor: pointer;
 
-//     transition: fill var(--anim), background-color var(--anim);
-// }
+    transition: fill var(--anim), background-color var(--anim);
+}
 
-// .team__socials-item:hover .team__socials-link,
-// .team__socials-item:focus .team__socials-link {
-//     fill: var(--light-txt-cl);
-//     background-color: var(--accent-txt-color);
+.team__socials-item:hover .team__socials-link,
+.team__socials-item:focus .team__socials-link {
+    fill: var(--light-txt-cl);
+    background-color: var(--accent-txt-color);
 
-// }
-// .footer__social-link {
-//     align-items: center;
-//     justify-content: center;
-//     width: 44px;
-//     height: 44px;
-//     border-radius: 50%;
-//     background-color: rgba(255, 255, 255, 0.1);
-//     display: flex;
-//     fill: var(--light-txt-cl);
-//     cursor: pointer;
+}
+.footer__social-link {
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    fill: var(--light-txt-cl);
+    cursor: pointer;
 
-//     transition: background-color var(--anim);
+    transition: background-color var(--anim);
 
-//     &:hover, &:focus {
-//         border-radius: 50%;
-//         background-color: var(--accent-txt-color);
-//     }
-// }
+    &:hover, &:focus {
+        border-radius: 50%;
+        background-color: var(--accent-txt-color);
+    }
+}
 
-// .footer__box {
-//     display: flex;
-//     gap: 10px;
-// }
+.footer__box {
+    display: flex;
+    gap: 10px;
+}

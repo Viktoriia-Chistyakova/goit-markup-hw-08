@@ -1,13 +1,21 @@
-// .hero__title {
-//     margin-bottom: 30px;
-//     font-weight: 900;
-//     font-size: 44px;
-//     line-height: 1.4;
-//     text-align: center;
-//     letter-spacing: 0.06em;
-//     text-transform: uppercase;
-//     color: var(--light-txt-cl);
-// }
+.hero__title {
+    display: flex;
+    margin-bottom: 30px;
+
+    font-size: 26px;
+    line-height: 1.6;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--light-txt-cl);
+    
+
+    @media screen and (min-width: 1200px) {    
+            font-weight: 900;
+
+        }
+}
 
 .title::selection {
     background-color: var(--accent-txt-color);
@@ -36,32 +44,41 @@
     color: var(--grey-txt-cl);
 }
 
-// .headline {
-//     margin-bottom: 50px;
-//     font-weight: 700;
-//     font-size: 36px;
-//     line-height: 1.2;
-//     text-align: center;
-//     letter-spacing: 0.03em;
-//     color: var(--dark-txt-cl);
-// }
+.headline {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--dark-txt-cl);
 
-// .name {
-//     margin-bottom: 10px;
-//     font-weight: 500;
-//     font-size: 16px;
-//     line-height: 1.2;
-//     text-align: center;
-//     letter-spacing: 0.03em;
-//     color: var(--dark-txt-cl);
-// }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
+    
+}
 
-// .footer__title {
-//     font-weight: 700;
-//     font-size: 14px;
-//     line-height: 16px;
-//     letter-spacing: 0.03em;
-//     text-transform: uppercase;
-//     color: var(--light-txt-cl);
-//     margin-bottom: 20px;
-// }
+.name {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--dark-txt-cl);
+}
+
+.footer__title {
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--light-txt-cl);
+    margin-bottom: 20px;
+}

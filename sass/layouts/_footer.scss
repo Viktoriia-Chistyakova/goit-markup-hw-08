@@ -1,64 +1,152 @@
-// .footer {
-//     background-color: #2F303A;
-//     text-decoration: none;
-//     padding: 60px;
-// }
+.footer {
+    background-color: #2F303A;
+    text-decoration: none;
+    padding: 60px;
 
-// .contacts {
-//     margin-top: 20px;
-//     font-style: normal;
-//     font-size: 14px;
-//     line-height: 1.7;
-//     letter-spacing: 0.03em;
-//     color: var(--light-txt-cl);
-// }
+    @media screen and (min-width: 1200px) {
+        padding: 60px 0 60px 0;
+        
+    }
+}
+
+.contacts {
+    margin-top: 20px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--light-txt-cl); 
+    
+    @media screen and (min-width: 768px){
+
+    }
+}
 
 
-// .footer__contacts-item {
-//     font-style: normal;
-//     font-size: 14px;
-//     line-height: 1.7;
-//     letter-spacing: 0.03em;
-//     color: rgba(255, 255, 255, 0.6);
+.footer__contacts-item {
 
-//     transition: color var(--anim);
+  
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
 
-//     &:hover, &:focus {
-//         color: var(--accent-txt-color);
-//     }
-// }
-// .footer__container {
-//     display: flex;
-// }
+    transition: color var(--anim);
 
-// .footer__join {
-//     margin-left: 70px;
-// }
+    &:hover, &:focus {
+        color: var(--accent-txt-color);
+    }
 
-// .subscribe {
-//     margin-left: 93px;
-//     margin-bottom: 35px;
-// }
+    
 
-// .subscription {
-//     margin-right: 10px;
-// }
+    @media screen and (max-width: 767px) {
+        display: flex;
+        justify-content: center; 
+    }
+}
 
-// .subscribe__field {
-//     width: 358px;
-//     height: 50px;
-//     background-color: transparent;
-//     border: 1px solid rgba(255, 255, 255, 0.3);
-//     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-//     border-radius: 4px;
-// }
+.footer__adress:not(:last-child) {
+    margin-bottom: 8px;
+    } 
 
-// .subscribe__field::placeholder {
-//     font-weight: 400;
-//     font-size: 14px;
-//     line-height: 16px;
-//     letter-spacing: 0.01em;
-//     color: rgba(255, 255, 255, 0.6);
-//     padding: 15px 16px;
-// }
+.footer__container {
+    display: flex;
 
+    @media screen and (max-width: 767px){
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+    }
+
+}
+
+.footer__join {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 768px) {
+        // margin-left: 70px;
+    }
+}
+
+.subscribe {
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        margin-top: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;
+    }
+}
+
+.subscription {
+    margin-bottom: 20px;
+
+    // @media screen and (min-width: 768px) {
+    //     margin-right: 10px;
+    // }
+}
+
+.subscribe__field {
+    width: 450px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+    }
+
+}
+
+.subscribe__field::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 15px 16px;
+
+    @media screen and (min-width: 1200px ) {
+        font-size: 14px;
+    }
+}
+
+.subscribe__email {
+
+    @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        gap: 12px;
+    }
+}
+
+.footer__main {
+    @media screen and (min-width: 768px) {
+        margin-right: 165px;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 1200px){
+    margin-right: 70px;
+    }
+    
+}
