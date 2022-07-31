@@ -184,21 +184,26 @@
   cursor: pointer;
 }
 
-.portfolio {
-  padding: 94px 0;
-}
-
 .portfolio-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   gap: 8px;
   margin-bottom: 50px;
+}
+@media screen and (mix-width: 768px) {
+  .portfolio-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .subscribe__icon {
@@ -325,6 +330,7 @@
 @media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
+    padding-bottom: 0;
   }
 }
 
@@ -1472,9 +1478,13 @@ a {
 }
 
 .port-ex-item {
-  -ms-flex-preferred-size: calc((100% - var(--indent) * var(--items)) / var(--items));
-      flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
-  margin: calc(var(--indent) / 2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-preferred-size: calc((100% - 60px) / 2);
+      flex-basis: calc((100% - 60px) / 2);
   border-left: 1px solid rgb(238, 238, 238);
   border-right: 1px solid rgb(238, 238, 238);
   border-bottom: 1px solid rgb(238, 238, 238);
@@ -1482,6 +1492,13 @@ a {
   transition: -webkit-box-shadow var(--anim);
   transition: box-shadow var(--anim);
   transition: box-shadow var(--anim), -webkit-box-shadow var(--anim);
+}
+@media screen and (min-width: 1200px) {
+  .port-ex-item {
+    -ms-flex-preferred-size: calc((100% - var(--indent) * var(--items)) / var(--items));
+        flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
+    margin: calc(var(--indent) / 2);
+  }
 }
 
 .port-ex-item:hover,
