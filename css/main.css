@@ -1463,10 +1463,11 @@ a {
   gap: 30px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: calc(-1 * var(--indent) / 2);
+}
+@media screen and (min-width: 1200px) {
+  .port-ex {
+    margin-bottom: 94px;
+  }
 }
 
 .title-desc {
@@ -1491,11 +1492,14 @@ a {
   transition: box-shadow var(--anim);
   transition: box-shadow var(--anim), -webkit-box-shadow var(--anim);
 }
+@media screen and (min-width: 768px) {
+  .port-ex-item {
+    width: calc((100% - 30px) / 2);
+  }
+}
 @media screen and (min-width: 1200px) {
   .port-ex-item {
-    -ms-flex-preferred-size: calc((100% - var(--indent) * var(--items)) / var(--items));
-        flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
-    margin: calc(var(--indent) / 2);
+    width: calc((100% - 60px) / 3);
   }
 }
 
