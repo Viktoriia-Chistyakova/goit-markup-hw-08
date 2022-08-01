@@ -16,7 +16,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
     border-left: 1px solid rgba(238, 238, 238, 1);
     border-right: 1px solid rgba(238, 238, 238, 1);
     border-bottom: 1px solid rgba(238, 238, 238, 1);
@@ -24,8 +23,7 @@
     transition: box-shadow var(--anim);
 
     @media screen and (min-width: 768px) {
-        width: 354px;
-        height: 440px;
+ 
     }
     
     @media screen and (min-width: 1200px) {

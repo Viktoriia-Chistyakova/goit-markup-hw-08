@@ -1491,12 +1491,6 @@ a {
   transition: box-shadow var(--anim);
   transition: box-shadow var(--anim), -webkit-box-shadow var(--anim);
 }
-@media screen and (min-width: 768px) {
-  .port-ex-item {
-    width: 354px;
-    height: 440px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .port-ex-item {
     -ms-flex-preferred-size: calc((100% - var(--indent) * var(--items)) / var(--items));
