@@ -17,8 +17,9 @@
     letter-spacing: 0.03em;
     color: var(--light-txt-cl); 
     
-    @media screen and (min-width: 768px){
-
+    
+    @media screen and (max-width: 1199px){
+        text-align: center;
     }
 }
 
@@ -146,7 +147,7 @@
 }
 
 .footer__main {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px){
         margin-right: 165px;
         text-align: center;
     }
