@@ -611,6 +611,10 @@ img {
   height: auto;
 }
 
+* {
+  outline: 1px solid palevioletred;
+}
+
 h1,
 h2,
 h3,
@@ -672,6 +676,9 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .benefits__item {
@@ -1063,13 +1070,17 @@ a {
 }
 
 .subscribe__field {
-  width: 450px;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+@media screen and (min-width: 480px) {
+  .subscribe__field {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .subscribe__field {
@@ -1420,6 +1431,9 @@ a {
   gap: 30px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .clients__item {
   display: -webkit-box;
