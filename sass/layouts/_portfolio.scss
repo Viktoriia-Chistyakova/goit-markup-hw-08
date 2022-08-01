@@ -2,7 +2,9 @@
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
+    justify-content: center;
     margin: calc(-1 * var(--indent) / 2);
+
 }
 
 .title-desc {
@@ -22,7 +24,8 @@
     transition: box-shadow var(--anim);
 
     @media screen and (min-width: 768px) {
-        
+        width: 354px;
+        height: 440px;
     }
     
     @media screen and (min-width: 1200px) {

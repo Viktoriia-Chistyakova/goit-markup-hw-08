@@ -339,6 +339,7 @@
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 30px;
+  font-weight: 900;
   font-size: 26px;
   line-height: 1.6;
   text-align: center;
@@ -351,7 +352,7 @@
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
-    font-weight: 900;
+    font-size: 44px;
   }
 }
 
@@ -467,12 +468,6 @@
 @media screen and (min-width: 768px) {
   .header__container {
     height: 80px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero__container {
-    height: 600px;
   }
 }
 
@@ -824,7 +819,6 @@ a {
 
 .hero {
   max-width: 1600px;
-  max-height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
@@ -843,13 +837,13 @@ a {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-sm-2x.jpg);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-md.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-md.jpg);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-wekit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-wekit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-md-2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-md-2x.jpg);
@@ -1469,6 +1463,9 @@ a {
   gap: 30px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: calc(-1 * var(--indent) / 2);
 }
 
@@ -1493,6 +1490,12 @@ a {
   transition: -webkit-box-shadow var(--anim);
   transition: box-shadow var(--anim);
   transition: box-shadow var(--anim), -webkit-box-shadow var(--anim);
+}
+@media screen and (min-width: 768px) {
+  .port-ex-item {
+    width: 354px;
+    height: 440px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .port-ex-item {
